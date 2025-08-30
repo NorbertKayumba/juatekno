@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio - JuaTekno</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .portfolio-card {
+      transition: transform 0.3s;
+    }
+    .portfolio-card:hover {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="index.php">JuaTekno</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.php">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.php">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="portfolio.php">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.php#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="py-5 text-center">
+    <div class="container">
+      <h1 class="display-5">Mon Portfolio</h1>
+      <p class="lead">Quelques réalisations récentes</p>
+    </div>
+  </header>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card portfolio-card h-100">
+            <img src="portfolio.png" class="card-img-top" alt="Projet 1">
+            <div class="card-body">
+              <h5 class="card-title">Gestion de stock</h5>
+              <p class="card-text">Application bureautique pour petites boutiques. Suivi des entrées/sorties, alertes stock bas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card portfolio-card h-100">
+            <img src="portfolio2.png" class="card-img-top" alt="Projet 2">
+            <div class="card-body">
+              <h5 class="card-title">Site pour salon de coiffure</h5>
+              <p class="card-text">Site vitrine avec galerie, réservation en ligne, et page contact.</p>
+            </div></div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card portfolio-card h-100">
+            <img src="portfolio1.png" class="card-img-top" alt="Projet 3">
+            <div class="card-body">
+              <h5 class="card-title">Formulaire d’inscription</h5>
+              <p class="card-text">Formulaire connecté à une base de données MySQL avec interface d’authentification.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-4 bg-dark text-white text-center">
+    <div class="container">
+      <small>&copy; 2025 JuaTekno. Tous droits réservés.</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
